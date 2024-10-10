@@ -1,0 +1,66 @@
+.component3Container {
+    margin-bottom: 20px; /* Adjust the value based on your preference */
+  }
+
+
+
+.container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px; /* Adjust the gap between rows */
+  }
+  
+  .row {
+    display: flex;
+    gap: 20px; /* Adjust the gap between columns */
+    margin-bottom: 10px;
+  }
+  
+  .column {
+    flex: 1;
+  }
+  
+  .table{
+    padding: 10px;
+    border : 2px solid black;
+    border-radius: 10px;
+  }
+
+  .Portlet1{
+    padding: 10px;
+    border : 2px solid black;
+    border-radius: 10px;
+  }
+
+  .Portlet41{
+    width: 33%;
+    padding: 10px;
+    border : 2px solid black;
+    border-radius: 10px;
+  }
+  
+   .Portlet1 h1{
+    text-align: center;
+   }
+  /* Additional styles can be added based on your specific design requirements */
+
+
+
+.button_add_event button {
+    color: white;
+    background-color: var(--primaryColor);
+    padding: 10px;
+    border: none;
+    outline: none;
+    border-radius: 2px;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    transition: all 0.3s;
+    font-weight: bold;
+    padding-left: 30px;
+    padding-right: 30px;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: all 0.3s;
+    margin-left: 90%;
+}

@@ -1,0 +1,157 @@
+.wrapper {
+  padding: 20px;
+   border: 2px solid black;
+}
+
+.dashboardwrapper {
+  padding: 20px;
+  border: 2px solid black;
+}
+
+.boldRow {
+  font-weight: bold;
+}
+
+
+.table {
+  border-collapse: collapse;
+  width: 100%;
+  table-layout: fixed;
+  color: gray;
+}
+
+.table th,
+.table td {
+  border: 1px solid #dddddd;
+  /* Add border to table cells */
+  text-align: left;
+  padding: 8px;
+}
+
+.table th[colSpan="2"] {
+  background-color: #adb0cbaf;
+  text-align: center;
+  border: 1px solid #dddddd;
+  /* Add border to the first header row */
+  padding: 8px;
+  font-weight: bold;
+}
+
+.table th[colSpan="3"] {
+  background-color: #adb0cbaf;
+  text-align: center;
+  border: 1px solid #dddddd;
+  /* Add border to the first header row */
+  padding: 8px;
+  font-weight: bold;
+}
+
+.table tfoot td {
+  font-weight: bold;
+  /* Make all cells in the last row bold */
+}
+
+.table th[colSpan="4"] {
+  background-color: #adb0cbaf;
+  text-align: center;
+  border: 1px solid #dddddd;
+  /* Add border to the first header row */
+  padding: 8px;
+  font-weight: bold;
+}
+
+.table th[colSpan="5"] {
+  background-color: #adb0cbaf;
+  text-align: center;
+  border: 1px solid #dddddd;
+  /* Add border to the first header row */
+  padding: 8px;
+  font-weight: bold;
+}
+
+.table th[colSpan="9"] {
+  background-color: #adb0cbaf;
+  text-align: center;
+  border: 1px solid #dddddd;
+  /* Add border to the first header row */
+  padding: 8px;
+  font-weight: bold;
+}
+
+.header {
+  text-align: center;
+  color: aqua
+}
+
+.wrapper .Title {
+  text-align: center;
+  font: bold;
+  font-size: 3vh;
+  padding: 3px;
+  padding-bottom: 5px;
+}
+
+/* Newly added properties */
+
+
+.heading {
+  color: white;
+  width: 100%;
+  background-color: rgb(227, 132, 15);
+  height: 50px;
+  display: flex;
+  align-items: center;
+  padding-left: 10px;
+  margin-top: -8px;
+
+}
+
+.text {
+  display: flex;
+  justify-content: space-between;
+  padding-left: 30vh;
+  padding-right: 30vh;
+}
+
+.label {
+
+  display: flex;
+  gap: 10px;
+  margin-left: 30vh;
+
+}
+
+.label div {
+  border: 3px solid rgb(121, 67, 4);
+  text-align: center;
+  width: 15vh;
+  padding: 10px;
+
+}
+
+.label div:nth-last-child(1) {
+  margin-left: 72vh;
+}
+
+
+.label_button {
+
+  display: flex;
+  gap: 10px;
+  margin-left: 30vh;
+  margin-top: 8px;
+}
+
+.label_button button {
+  background-color: rgb(2, 90, 2);
+  border: none;
+  width: 15vh;
+  padding: 10px;
+  border-radius: 5px;
+  color: white;
+  font-size: 25px;
+}
+
+.label_button div:nth-last-child(1) {
+  margin-left: 72vh;
+}

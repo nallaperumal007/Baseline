@@ -1,0 +1,36 @@
+
+.imgdiv {
+  width:400px;
+  height:400px;
+}
+
+.hrTable {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+.hrTable th,
+.hrTable td {
+  border: 1px solid #dddddd; /* Add border to table cells */
+  text-align: left;
+  padding: 8px;
+}
+
+.hrTable th[colSpan="3"] {
+  background-color: #adb0cbaf;
+  text-align: center;
+  border: 1px solid #dddddd; /* Add border to the first header row */
+  padding: 8px;
+  font-weight: bold;
+}
+.hrTable tfoot td {
+  font-weight: bold; /* Make all cells in the last row bold */
+}
+
+.hrTable th[colSpan="4"] {
+  background-color: #adb0cbaf;
+  text-align: center;
+  border: 1px solid #dddddd; /* Add border to the first header row */
+  padding: 8px;
+  font-weight: bold;
+}

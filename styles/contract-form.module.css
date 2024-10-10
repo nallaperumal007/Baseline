@@ -1,0 +1,379 @@
+.mainWrapper {
+    display: flex;
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.5);
+    top: 0;
+    left: 0;
+    z-index: 99;
+    justify-content: center;
+    align-items: center;
+}
+
+.wrapper {
+    position: relative;
+    background-color: white;
+    padding: 30px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 20px;
+    max-height: 80%;
+    box-sizing: content-box;
+    overflow-y: scroll;
+    margin: 20px;
+    width: 90%;
+}
+
+.heading2 {
+    padding: 20px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px;
+    font-weight: 500;
+    background-color: #dc222a;
+    align-items: center;
+    position: relative;
+}
+
+.title {
+    text-align: center;
+    font-weight: 500;
+    font-size: 24px;
+    margin-bottom: 30px;
+}
+
+.heading {
+    padding: 10px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px;
+    font-weight: 500;
+    background-color: var(--primaryColor);
+}
+
+.inputAlignment {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+.inputAlignment p {
+    align-self: center;
+}
+
+.inputAlignment select {
+    display: flex;
+    /* width: 50%; */
+    padding: 10px;
+    border-radius: 5px;
+    border-color: var(--primaryColor);
+}
+
+.verifyAlignment {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+}
+
+.inputAlignmentVerify select {
+  display: flex;
+  width: 100%;
+  padding: 10px;
+  border-radius: 5px;
+  border-color: var(--primaryColor);
+}
+
+.inputCustom {
+    width: 50%;
+}
+
+.inputCustomDot {
+    width: 50%;
+    border-bottom: 3px dotted #000;
+    text-decoration: none;
+}
+
+.date {
+    width: 100%;
+    height: 40px;
+    padding-left: 10px;
+    border: 1px solid rgb(201, 201, 201);
+    border-radius: 5px;
+    border-color: var(--primaryColor);
+}
+
+.checkbox label {
+    padding-left: 10px;
+}
+
+.percentage {
+    display: flex;
+}
+
+.percentage span {
+    padding-left: 10px;
+    padding-top: 10px;
+}
+
+.button {
+    display: flex;
+    justify-content: flex-end;
+    padding: 20px;
+}
+
+.closeButton {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    top: 20px;
+    right: 20px;
+    cursor: pointer;
+}
+
+.sideWrapper {
+    display: flex;
+    justify-content: space-between;
+}
+
+.leftWrapper {
+    padding-right: 40px;
+    width: 50%;
+}
+
+.rightWrapper {
+    padding-left: 40px;
+    width: 50%;
+}
+
+.line {
+    margin-bottom: 30px;
+    margin-top: 30px;
+    height: 1px;
+    width: 100%;
+    background: rgb(226, 226, 226);
+}
+
+.buttonWrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+@media (max-width: 480px) {
+    .mainWrapper {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        margin-left: 0;
+        margin-right: 0;
+    }
+    .sideWrapper {
+        flex-direction: column;
+    }
+    .leftWrapper {
+        width: 100%;
+    }
+    .rightWrapper {
+        padding-left: 0px;
+        width: 100%;
+    }
+    .inputAlignment {
+        display: flex;
+        gap: 10px;
+        flex-direction: column;
+        justify-content: start;
+        padding: 20px;
+    }
+    .inputAlignment p {
+        align-self: flex-start;
+    }
+    .inputCustom {
+        width: 100%;
+    }
+    .inputAlignment select {
+        display: flex;
+        width: 100%;
+        padding: 10px;
+    }
+
+    .button {
+        justify-content: center;
+    }
+}
+
+.textArea {
+    padding: 10px;
+    border: 1px solid rgb(201, 201, 201);
+    border-radius: 5px;
+    font-size: 14px;
+    outline: none;
+    width: 100%;
+    margin-top: 20px;
+    border-color: var(--primaryColor);
+}
+
+.textArea:focus {
+    border-color: var(--primaryColor);
+}
+
+.textArea:disabled {
+    cursor: not-allowed;
+}
+
+.termsWrapper {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: center;
+    /* margin: 40px; */
+    align-items: center;
+    padding: 10px;
+}
+
+.termsAlignment {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+}
+
+.termsInput {
+    width: 60%;
+    justify-content: center;
+    align-items: center;
+}
+.heading2 i {
+    font-size: 25px;
+}
+
+@media (max-width: 800px) {
+    .img {
+        width: 100px;
+        height: 100px;
+    }
+    .heading2 h2 {
+        font-size: 15px;
+    }
+    .heading2 i {
+        font-size: 15px;
+    }
+    .termsWrapper {
+        margin: 0px;
+    }
+}
+
+@media (max-width: 1024px) {
+    .heading2 h2 {
+        font-size: 15px;
+    }
+    .heading2 i {
+        font-size: 15px;
+    }
+}
+
+@media (max-width: 600px) {
+    .img {
+        visibility: hidden;
+    }
+}
+
+.instructionWrapper {
+    display: flex;
+    margin-top: 50px;
+    justify-content: space-between;
+}
+
+.instructionFooterWrapper {
+    display: flex;
+    margin-top: 50px;
+    justify-content: space-between;
+}
+
+.leftInstructionWrapper {
+    padding-right: 10px;
+    width: 32%;
+}
+
+.midInstructionWrapper {
+    padding-left: 10px;
+    padding-right: 10px;
+    width: 32%;
+}
+
+.rightInstructionWrapper {
+    padding-left: 10px;
+    width: 32%;
+}
+
+.container {
+    padding: 10px;
+}
+
+.main {
+    font-weight: 600;
+}
+.footerleft {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    color: #dc222a;
+    align-items: center;
+    font-size: 25px;
+    font-weight: 700;
+}
+.footerright {
+    width: 50%;
+}
+.sign {
+    border: 2px solid #dc222a;
+    border-radius: 5px;
+    display: flex;
+    gap: 100px;
+    padding: 10px;
+    height: 100px;
+    align-items: end;
+}
+.sign p {
+    font-size: 13px;
+}
+@media (max-width: 768px) {
+    .instructionFooterWrapper {
+        flex-direction: column;
+        gap: 50px;
+    }
+    .footerleft {
+        width: 100%;
+    }
+    .footerright {
+        width: 100%;
+    }
+    .sign {
+        gap: 20px;
+        flex-direction: column;
+        justify-content: end;
+        align-items: start;
+    }
+}
+@media (max-width: 425px) {
+    .instructionWrapper {
+        flex-direction: column;
+    }
+
+    .leftInstructionWrapper {
+        width: 100%;
+    }
+
+    .midInstructionWrapper {
+        width: 100%;
+    }
+
+    .rightInstructionWrapper {
+        width: 100%;
+    }
+}

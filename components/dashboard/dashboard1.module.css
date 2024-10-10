@@ -1,0 +1,39 @@
+.wrapper {
+    padding: 20px;
+  }
+  .wrapper{
+    padding: 20px;
+    border : 2px solid black;
+    border-radius: 10px;
+  }
+  
+  .table {
+    border-collapse: collapse;
+    width: 100%;
+    color: gray;
+    
+  }
+  
+  .table th,
+  .table td {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+    white-space:unset; /* Prevent text wrapping */
+  }
+  
+  .table th[colSpan="2"],
+  .table th[colSpan="3"],
+  .table th[colSpan="4"] {
+    background-color: #adb0cbaf;
+    text-align: center;
+    border: 1px solid #dddddd;
+    padding: 8px;
+    font-weight: bold;
+  }
+  
+  .header {
+    text-align: center;
+    color: aqua;
+  }
+  

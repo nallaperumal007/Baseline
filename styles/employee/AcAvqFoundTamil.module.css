@@ -1,0 +1,60 @@
+.videoAlignment {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+.videoAlignment p {
+    margin-top: 30px;
+}
+
+.videoAlignment video {
+    height: 390px;
+    width: 692px;
+    margin-top: 30px;
+    margin-bottom: 10px;
+    border: 1px solid rgb(214, 214, 214);
+}
+
+/* iPad */
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) {
+    .videoAlignment video {
+        height: 280px;
+        width: 520px;
+    }
+}
+
+/* iPad Pro */
+@media only screen and (min-device-width: 1024px) and (max-device-width: 1024px) and (orientation: portrait) {
+    .videoAlignment video {
+        height: 380px;
+        width: 620px;
+    }
+}
+
+@media only screen and (min-device-width: 1366px) and (max-device-width: 1366px) and (orientation: landscape) {
+    .videoAlignment video {
+        height: 380px;
+        width: 800px;
+    }
+}
+
+@media (max-width: 860px) {
+    .videoAlignment video {
+        height: 240px;
+        width: 400px;
+    }
+}
+@media (max-width: 480px) {
+    .videoAlignment video {
+        height: 240px;
+        width: 340px;
+    }
+}
+
+@media (max-width: 320px) {
+    .videoAlignment video {
+        height: 200px;
+        width: 300px;
+    }
+}

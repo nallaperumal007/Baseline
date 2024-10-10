@@ -1,0 +1,54 @@
+.icon {
+  width: 20px;
+  height: 20px;
+  color: var(--primaryColor);
+}
+
+.active {
+  background-color: rgba(17, 189, 17, 0.336);
+  font-weight: 600;
+  color: green;
+  border-radius: 3px;
+  font-size: 14px;
+  padding: 5px;
+}
+
+.inactive {
+  background-color: rgba(235, 70, 70, 0.459);
+  font-weight: 600;
+  color: red;
+  border-radius: 3px;
+  font-size: 14px;
+  padding: 5px;
+}
+
+.wrapper {
+  flex-wrap: wrap;
+}
+
+.button {
+  margin-bottom: 10px;
+}
+
+@media (max-width: 480px) {
+  .active {
+    background-color: unset;
+    font-weight: unset;
+  }
+
+  .inactive {
+    background-color: unset;
+    font-weight: unset;
+    padding: unset;
+  }
+  /* .table tbody td {
+    border-bottom: 1px solid rgb(226, 226, 226);
+  }
+  .table > tbody tr {
+    border-bottom: 1px solid rgb(0, 0, 0);
+  }
+
+  .table tbody td:last-child {
+    border-bottom: unset;
+  } */
+}

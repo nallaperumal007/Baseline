@@ -1,0 +1,25 @@
+.videoSlider {
+    height: 100px;
+    width: 150px;
+    border-radius: 10%;
+    margin-bottom: 10px;
+    border: 1px solid black;
+}
+
+.videoSliderAlignment {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+.videoSliderAlignment video {
+    height: 100px;
+    width: 150px;
+    border-radius: 10%;
+    margin-bottom: 10px;
+    border: 1px solid rgb(214, 214, 214);
+}
+
+.videoSliderAlignment p {
+    font-size: 16px;
+    font-weight: 500;
+}

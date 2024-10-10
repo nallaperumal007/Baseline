@@ -1,0 +1,61 @@
+
+  .row {
+    display: flex;
+    gap: 20px; /* Adjust the gap between columns */
+    margin-bottom: 10px;
+    width: 100%;
+  }
+  
+  .table {
+    border-collapse: collapse;
+    width: 100%;
+    table-layout: auto;
+    color: gray;
+  }
+  
+  .table th,
+  .table td {
+    border: 1px solid #dddddd; /* Add border to table cells */
+    text-align: left;
+    padding: 8px;
+  }
+  
+  .table th[colspan="2"] {
+    background-color:#adb0cbaf;
+    text-align: center;
+    border: 1px solid #dddddd; /* Add border to the header row */
+    padding: 8px;
+    font-weight: bold;
+  }
+  
+  .Portlet1 {
+    padding: 10px;
+    border: 2px solid var(--primaryColor);
+    border-radius: 10px;
+    width: 100%;
+  }
+  
+  /* .wrapper {
+    padding: 20px;
+    border: 2px solid var(--primaryColor);
+    width: 100%; 
+  } */
+
+  .button_add_event button {
+    color: white;
+    background-color: var(--primaryColor);
+    padding: 10px;
+    border: none;
+    outline: none;
+    border-radius: 2px;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    transition: all 0.3s;
+    font-weight: bold;
+    /* padding-left: 30px;
+    padding-right: 30px; */
+    border-radius: 6px;
+    cursor: pointer;
+    transition: all 0.3s;
+    margin-left: 75%;
+}

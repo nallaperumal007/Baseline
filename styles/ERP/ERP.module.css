@@ -1,0 +1,286 @@
+ /*eventmngmt1.css */
+
+ .container {
+   width: 80%;
+   margin: 0 auto;
+ }
+
+ .header {
+   font-size: 2.5em;
+   margin-top: 70px;
+   margin-right: 50px;
+   text-align: left;
+ }
+
+ .content {
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   margin-top: 60px;
+ }
+
+ .eventImage {
+   width: 40%;
+   height: auto;
+   margin-right: 20px;
+ }
+
+ .text {
+   width: 55%;
+   text-align: left;
+ }
+
+ .text p {
+   font-size: 1.2em;
+   line-height: 1.5;
+
+ }
+
+ .additionalText {
+   width: 80%;
+   margin: 80px auto;
+ }
+
+ .additionalText h3 {
+   color: #666;
+   margin-bottom: 10px;
+ }
+
+ .additionalText h4 {
+   font-size: 1.5em;
+   margin-top: 20px;
+ }
+
+ .additionalText h2 {
+   font-size: 2em;
+   margin-bottom: 20px;
+   margin-top: 20px;
+   font-family: 'Arial', sans-serif;
+   justify-content: center;
+   text-align: center;
+ }
+
+ .additionalText p {
+   font-size: 1.2em;
+   line-height: 1.6;
+   text-align: center;
+   /* margin-bottom: 30px; */
+ }
+
+ .additionalText ul {
+   list-style-type: disc;
+   margin-left: 20px;
+   margin-bottom: 30px;
+   text-align: left;
+ }
+
+
+ .additionalText ul li {
+   font-size: 1.1em;
+   line-height: 1.6;
+   margin-bottom: 8px;
+ }
+
+ .additionalText ul li b {
+   font-weight: bold;
+ }
+
+ .formContainer {
+   max-width: 600px;
+   margin: 0 auto;
+   padding: 20px;
+   border: 1px solid #ccc;
+   border-radius: 8px;
+   background-color: #f9f9f9;
+ }
+
+ .formContainer h2 {
+   margin-bottom: 20px;
+   color: #333;
+   font-size: 24px;
+ }
+
+ .formContainer p {
+   margin-bottom: 20px;
+   font-size: 16px;
+   color: #666;
+ }
+
+ .formGroup label {
+   width: 200px;
+   margin-right: 10px;
+   font-weight: bold;
+   color: #333;
+ }
+
+ .enquiryForm {
+   display: flex;
+   flex-direction: column;
+ }
+
+ .enquiryForm label {
+   margin-bottom: 5px;
+   font-weight: bold;
+   color: #333;
+ }
+
+ .enquiryForm input,
+ .enquiryForm select,
+ .enquiryForm textarea {
+   margin-bottom: 15px;
+   padding: 10px;
+   font-size: 16px;
+   border: 1px solid #ccc;
+   border-radius: 4px;
+   width: 100%;
+   box-sizing: border-box;
+ }
+
+ .enquiryForm textarea {
+   resize: vertical;
+   height: 100px;
+ }
+
+ .enquiryForm button {
+   padding: 10px 20px;
+   background-color: #007bff;
+   color: white;
+   border: none;
+   border-radius: 5px;
+   cursor: pointer;
+   font-size: 16px;
+ }
+
+ .enquiryForm button:hover {
+   background-color: #0056b3;
+ }
+
+ /* Gallery */
+ .gallery {
+   width: 80%;
+   margin: 80px auto;
+   text-align: left;
+ }
+
+ .gallery h2 {
+   font-size: 2.5em;
+   margin-bottom: 20px;
+   font-family: 'Arial', sans-serif;
+   color: #333;
+   margin-top: 30px;
+ }
+
+ .event1,
+ .event2,
+ .event3,
+ .event4 {
+   display: grid;
+   grid-template-columns: repeat(2, 1fr);
+   gap: 20px;
+   align-items: start;
+   /* Align items to the start of the grid */
+   width: 100%;
+ }
+
+ .event1 p,
+ .event2 p,
+ .event3 p,
+ .event4 p {
+   margin: 20px 10px;
+   font-size: 1.2em;
+   align-content: normal;
+   color: #555;
+   text-align: justify;
+ }
+
+ .eventImage1,
+ .eventImage2 {
+   width: 100%;
+   height: auto;
+   border: 2px solid #ddd;
+   border-radius: 10px;
+   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+   transition: transform 0.2s, box-shadow 0.2s;
+ }
+
+ .eventImage2 {
+   width: 90%;
+   height: auto;
+   margin-top: 20px;
+ }
+
+ .eventImage1:hover,
+ .eventImage2:hover {
+   transform: scale(1.1);
+   cursor: pointer;
+   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+ }
+
+ .videoContainer {
+   display: flex;
+   flex-wrap: nowrap;
+   justify-content: space-between;
+   margin-top: 20px;
+ }
+
+ .eventVideo {
+   width: 10%;
+   height: auto;
+   border: 2px solid #ddd;
+   border-radius: 10px;
+   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+   transition: transform 0.2s, box-shadow 0.2s;
+   margin-top: 10px;
+   margin-right: 10px;
+ }
+
+ .eventVideo:hover {
+   transform: scale(1.1);
+   cursor: pointer;
+   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+ }
+
+
+
+ /*Mobile edition*/
+
+ @media (max-width: 480px) {
+   .event1,
+   .event2,
+   .event3 {
+     display: block;
+    
+   }
+   .gallery h2 {
+     text-align: center;
+   }
+    
+   .videoContainer {
+    display: flex;
+    flex-wrap:wrap;
+    flex-direction: column;
+    align-content: center;
+   }
+   .videoContainer .eventVideo{
+    height: 150px;
+    width:80% ;
+    margin-right: 2px;
+   }
+    .content{
+    display: block;
+    text-align: center;
+    
+   }
+   .text{
+    text-align: center;
+    width: 100%;
+   }
+   .text p{
+    text-align: left;
+   }
+   .additionalText p{
+    text-align: left;
+   }
+
+
+ }

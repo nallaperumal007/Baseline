@@ -1,0 +1,39 @@
+
+.menuWrapper {
+  display: flex;
+  margin: 0;
+}
+
+.menuItem {
+  color: var(--primaryColor);
+  font-weight: 500;
+  font-size: 16px;
+  padding: 30px 14px;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+  .subMenu {
+    margin-top: 40px;
+  }
+  
+
+  
+
+  .content {
+    background-color: var(--primaryColor);
+    color: white;
+    padding: 8px;
+    margin: -8px;
+  }
+  
+  .subMenuItem {
+    color: white;
+    text-decoration: none;
+  }
+
+@media (max-width: 991px) {
+  .menuWrapper {
+    display: none;
+  }
+}

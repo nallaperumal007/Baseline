@@ -1,0 +1,699 @@
+@import url(https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css);
+
+.mainWrapper {
+  display: flex;
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.5);
+  top: 0;
+  left: 0;
+  z-index: 99;
+  justify-content: center;
+  align-items: center;
+}
+
+.indexBackground {
+  background-color: white;
+  padding: 5px;
+  border-radius: 50%;
+}
+
+.validationError {
+  color: red;
+  margin-left: 3px;
+  font-size: 15px;
+}
+
+.mandatory {
+  color: red;
+  margin-left: 3px;
+  font-size: 20px;
+}
+
+.wrapper {
+  position: relative;
+  background-color: white;
+  padding: 30px;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-radius: 20px;
+  max-height: 80%;
+  box-sizing: content-box;
+  overflow-y: scroll;
+  margin: 20px;
+  width: 50%;
+}
+
+.wrapperPayment {
+  position: relative;
+  background-color: white;
+  padding: 30px;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-radius: 20px;
+  max-height: 80%;
+  box-sizing: content-box;
+  overflow-y: scroll;
+  margin: 20px;
+  width: 70%;
+}
+
+.sideWrapperP {
+  display: flex;
+}
+
+.leftWrapperP {
+  padding-right: 20px;
+  width: 50%;
+  border-right: 3px solid #4473db;
+}
+
+.rightWrapperP {
+  padding-left: 20px;
+  width: 50%;
+}
+
+.newcomponents {
+  position: relative;
+  background-color: white;
+  padding: 30px;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-radius: 20px;
+  max-height: 80%;
+  box-sizing: content-box;
+  overflow-y: scroll;
+  margin: 20px;
+  width: 80%;
+}
+.title {
+  text-align: center;
+  font-weight: 500;
+  font-size: 24px;
+  margin-bottom: 30px;
+}
+.leftWrapper2 {
+    padding: 10px;
+  }
+
+  .inputAlignment2 {
+    display: flex;
+    flex-direction: column;
+  }
+
+.heading {
+  margin-top: -20px;
+}
+
+.form_label{
+  padding-top:10px;
+}
+
+.ant_input{
+  position: relative;
+}
+
+.ant_cus_count{
+  position: absolute;
+  top: 40px;
+  right: 10px;
+  bottom: 10px;
+  font-size: 12px;
+  color: #999;
+}
+
+.inputAlignment {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+}
+.inputAlignment input[type="text"]::placeholder,
+.inputAlignment select::placeholder,
+.inputAlignment textarea::placeholder {
+    color: #999; /* Placeholder text color */
+    font-size: 12px; /* Placeholder font size */
+}
+
+.flexContainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .flexItem {
+    flex: 1;
+    text-align: left;
+  }
+  
+  .flexItem:last-child {
+    text-align: right;
+  }
+.inputAlignment p {
+  align-self: center;
+}
+
+.inputAlignment select {
+  display: flex;
+  width: 50%;
+  padding: 10px;
+  border-radius: 5px;
+  border-color: var(--primaryColor);
+}
+
+.multiSelect {
+  max-width: 360px; /* Set the maximum width as needed */
+  width: 100%; /* Set the initial width as needed */
+}
+
+.inputCustom {
+  width: 50%;
+}
+
+.date {
+  width: 100%;
+  height: 40px;
+  padding-left: 10px;
+  border: 1px solid rgb(201, 201, 201);
+  border-radius: 5px;
+  border-color: var(--primaryColor);
+}
+.inputContainer {
+  position: relative;
+  display: flex;
+  align-items: center;
+  /* padding-top: 10px; */
+}
+
+.icon {
+  position: absolute;
+  right: 10px; /* Adjust this value to set the icon inside the input box */
+  top: 50%;
+  transform: translateY(-50%); /* Vertically center the icon */
+  pointer-events: none; /* Prevent the icon from blocking clicks on the input */
+}
+.date1 {
+  width: 100%;
+  height: 40px;
+  padding-right: 30px;
+  padding-left: 10px;
+  border: 1px solid rgb(201, 201, 201);
+  border-radius: 5px;
+  border-color: #dee2e6;
+}
+
+.date1:focus {
+  outline: none;
+  border-color: #86b7fe;
+  box-shadow: 0 0 0 0.25rem rgba(13, 110, 253, 0.25);
+  transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out,
+    -webkit-box-shadow 0.15s ease-in-out;
+}
+
+.button {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 20px;
+}
+.closeButton {
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  top: 20px;
+  right: 20px;
+  cursor: pointer;
+}
+.checkbox {
+  padding-right: 50px;
+}
+
+.checkbox label {
+  padding-left: 5px;
+}
+
+.passRequirement {
+  flex-grow: 1;
+  text-align: right;
+  font-size: 10px;
+  color: red;
+}
+
+.pass {
+  cursor: pointer;
+  position: absolute;
+  color: #aaa;
+  right: 0px;
+  width: 80px;
+  margin-top: 5px;
+  /* right: 0px;
+	width: 30px;
+    bottom: 6px; */
+}
+
+.tableHeading {
+  padding: 20px;
+}
+
+.noAttachement {
+  padding: 10px;
+  height: 70px;
+  border: rgb(223, 223, 223) solid 1px;
+}
+
+.attachmentDiv {
+  /* display: flex;
+    justify-content: space-between; */
+  margin-bottom: 5px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+}
+
+.attachmentDiv p {
+  flex: 1;
+  font-size: 12px;
+}
+
+.attachmentDiv img {
+  object-fit: cover;
+  padding: 10px;
+  width: 200px;
+  height: 150px;
+  cursor: pointer;
+}
+
+.attachmentDiv embed {
+  padding: 10px;
+  width: 200px;
+  height: 150px;
+  cursor: pointer;
+}
+
+.attachmentContainer {
+  margin-top: 10px;
+}
+
+.attachmentMainDiv {
+  display: flex;
+  flex-direction: column;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.closeAttachement {
+  display: flex;
+  margin-bottom: 5px;
+  border-bottom: solid 1px rgb(223, 214, 214);
+}
+
+.closeAttachement p {
+  flex: 1;
+  font-size: 12px;
+  line-height: 1.5em;
+}
+
+.closeAttachement img {
+  width: 15px;
+  height: 15px;
+  cursor: pointer;
+}
+
+.verifyAlignment {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+}
+
+.inputAlignmentVerify select {
+  display: flex;
+  width: 100%;
+  padding: 10px;
+  border-radius: 5px;
+  border-color: var(--primaryColor);
+}
+
+.disabledField {
+  background-color: white !important;
+}
+@media (max-width: 480px) {
+  .mainWrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  .inputAlignment {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+  }
+  .inputAlignment select {
+    display: flex;
+    width: 50%;
+    padding: 10px;
+  }
+  .button {
+    justify-content: center;
+  }
+}
+
+.contentWrapper {
+  background: color(srgb 0.8901 0.8902 0.8903);
+}
+
+.formWrapper {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  height: 80%;
+}
+
+.timelineDate {
+  display: flex;
+  color: black;
+  padding: 10px;
+}
+
+.formRow {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  padding: 10px;
+}
+
+.required::after {
+  content: "*";
+  color: var(--error) !important;
+}
+
+.controlGroup1 {
+  display: flex !important;
+  flex-direction: column !important;
+  height: 90px;
+}
+
+.controlGroup2 {
+  display: flex !important;
+  flex-direction: column !important;
+}
+
+.selectContainer {
+  position: relative;
+}
+
+.selectContainer::after {
+  content: "▼";
+  position: absolute;
+  right: 8px;
+  top: calc(50% - 13px);
+  pointer-events: none;
+}
+
+.error {
+  color: var(--error) !important;
+}
+
+.divMain1 {
+  padding-top: 30px;
+  width: 100%;
+  position: relative;
+}
+
+.divMain2 {
+  padding-top: 30px;
+  width: 100%;
+  position: relative;
+}
+
+.divMain3 {
+  padding-top: 30px;
+  width: 100%;
+  position: relative;
+}
+
+.fieldsetWrapper {
+  display: flex;
+  font-size: 14px;
+  flex-direction: column;
+  width: 100%;
+  padding: 10px 20px;
+  border: 2px solid black;
+  border-radius: 20px;
+  background-color: #dae3f4;
+  margin-bottom: 20px;
+}
+
+.mainLegendsWrapper {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.legendsWrapper {
+  width: fit-content;
+  border: 2px solid black;
+  margin-left: 10px;
+  border-radius: 10px;
+  padding: 5px;
+  margin-bottom: 0;
+  background-color: #4473c4;
+  color: white;
+  font-size: x-large;
+}
+
+.legendsWrapper1 {
+  width: fit-content;
+  position: absolute;
+  font-size: 20px;
+  top: 0;
+  border: 2px solid black;
+  margin-left: 10px;
+  border-radius: 10px;
+  padding: 5px;
+  margin-bottom: 0;
+  background-color: #4473c4;
+  color: white;
+}
+
+.legendsWrapper2 {
+  width: fit-content;
+  position: absolute;
+  font-size: 20px;
+  top: 0;
+  border: 2px solid black;
+  margin-left: 10px;
+  border-radius: 10px;
+  padding: 5px;
+  margin-bottom: 0;
+  background-color: #4473c4;
+  color: white;
+}
+
+.legendsWrapper3 {
+  width: fit-content;
+  position: absolute;
+  font-size: 20px;
+  top: 0;
+  border: 2px solid black;
+  margin-left: 10px;
+  border-radius: 10px;
+  padding: 5px;
+  margin-bottom: 0;
+  background-color: #4473c4;
+  color: white;
+}
+
+.addressTable {
+  width: 100%;
+  border-collapse: collapse;
+  table-layout: fixed;
+}
+
+.addressTable thead {
+  background-color: #4473c4;
+  color: white;
+}
+
+.addressTable thead th {
+  padding: 10px;
+  font-weight: normal !important;
+}
+
+.addressTableBtns {
+  margin-top: 10px;
+  width: 100%;
+  display: flex;
+}
+
+.addressTableBtns button {
+  padding: 5px 10px;
+}
+
+.addressTableBtns button:first-child {
+  margin-left: auto;
+  margin-right: 10px;
+}
+
+.readOnlyDataRow td {
+  padding: 10px;
+  background-color: white;
+  border-radius: 10px;
+  border: 1px solid #4473c4;
+  overflow-x: auto;
+}
+
+.actionCell {
+  display: flex;
+  align-items: center;
+  padding-right: 2%;
+  justify-content: end;
+  font-size: 25px;
+}
+
+.actionCell i {
+  margin: 5px;
+}
+
+.stepCircle {
+  width: 20px !important;
+  height: 20px !important;
+  border-radius: 50%;
+  border: 1px solid black;
+  background-color: white;
+  font-size: 16px;
+  z-index: 999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: default;
+}
+
+.accomplished {
+  background-color: green;
+}
+
+.rejected {
+  background-color: red;
+}
+
+.btnWrapper {
+  display: flex;
+  align-items: center;
+}
+
+.btnWrapper button {
+  margin-left: 10px;
+}
+
+.btnWrapper button:first-child {
+  margin-left: auto;
+}
+
+.customScroll::-webkit-scrollbar {
+  width: 0.3rem;
+}
+
+.customScroll::-webkit-scrollbar-track {
+  background: #ffffff00;
+  border-radius: 100vw;
+  margin-block: 1rem;
+}
+
+.customScroll::-webkit-scrollbar-thumb {
+  background: #ffffff73;
+  border: 0.25rem solid #ffffff73;
+  border-top: 0.4rem solid #ffffff73;
+  border-bottom: 0.4rem solid #ffffff73;
+  border-radius: 100vw;
+  height: 1rem;
+  padding-top: 1rem;
+}
+
+.customScroll:hover::-webkit-scrollbar-thumb {
+  background-color: #ffffff73;
+}
+
+.bulkDiv {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+
+.timelineIcon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: white;
+}
+
+.bulkInputDiv {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 4;
+}
+
+.tableContainer {
+  max-width: 200%;
+}
+.calender_visible{
+  overflow: visible;
+}
+
+.tableContainer table {
+  width: 100%;
+  border-collapse: collapse;
+  border-radius: 0.375rem;
+  border: 3px solid #2563eb;
+}
+
+.tableContainer thead tr {
+  background-color: #2563eb;
+}
+
+.tableContainer thead th {
+  min-width: 180px;
+  padding: 1rem 2rem;
+  font-size: 1.25rem;
+  font-weight: bold;
+  color: #fff;
+}
+
+.tableContainer tbody tr {
+  cursor: default;
+}
+
+.tableContainer tbody tr:hover {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+.tableContainer tbody td {
+  padding: 1rem 2rem;
+  font-size: 1rem;
+  font-weight: medium;
+  color: #000;
+}
+
+.blueClr {
+  background-color: #2563eb;
+  color: #fff;
+}
+
+.blueClr:hover {
+  background-color: #2563eb;
+}
+
+.containerBorder {
+  padding: 10px;
+  border: 2px solid var(--primaryColor);
+  border-radius: 10px;
+  width: 100%;
+  height: 100%;
+}

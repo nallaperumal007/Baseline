@@ -1,0 +1,36 @@
+.mainWrapper {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+
+    margin-bottom: 10px;
+}
+
+.title {
+    font-size: 20px;
+    color: var(--primaryColor);
+    margin-right: 10px;
+}
+
+.select {
+    width: 300px;
+    min-width: 300px;
+    font-size: 14px;
+    padding: 10px;
+    border-radius: 5px;
+    border-color: var(--primaryColor);
+}
+
+.buttonsWrapper {
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+}
+
+.buttonsWrapper button {
+margin-right: 10px;
+}
+
+.buttonsWrapper button:last-child {
+    margin-right: 0;
+}

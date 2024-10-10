@@ -1,0 +1,82 @@
+.headerTitle {
+	width: 100%;
+	display: flex;
+	padding: 50px;
+	background-color: var(--primaryColor);
+	justify-content: center;
+	align-items: center;
+}
+
+.headerTitle h1 {
+	color: white;
+}
+
+.heading {
+	padding: 30px;
+}
+
+.heading p {
+	color: var(--primaryColor);
+	font-size: 22px;
+	font-weight: bold;
+	margin-bottom: 60px;
+	margin-top: 20px;
+	text-align: center;
+}
+
+.heading div {
+	display: flex;
+	justify-content: center;
+}
+
+.heading img {
+	width: 10%;
+	aspect-ratio: 2/1;
+	object-fit: contain;
+}
+
+.clientsContainer {
+	display: flex;
+	overflow: initial;
+	/* Hide the overflow to create a scrolling effect */
+	padding: 10px;
+	white-space: nowrap;
+	height: 150px;
+
+	animation: scroll-left 20s linear infinite;
+	/* Apply the scrolling animation */
+}
+
+@keyframes scroll-left {
+	0% {
+		transform: translateX(0%);
+	}
+	100% {
+		transform: translateX(-100%);
+	}
+}
+
+.ourmembership {
+	display: flex;
+	/* Use flexbox to align items */
+	justify-content: center;
+	/* Center align horizontally */
+	align-items: center;
+	/* Center align vertically */
+	/* Add any other styles as needed */
+  }
+  
+
+
+
+ 
+@media (max-width: 768px) {
+	.heading p {
+		font-size: 22px;
+	}
+}
+@media (max-width: 480px) {
+	.heading p {
+		font-size: 16px;
+	}
+}
